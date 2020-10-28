@@ -1,0 +1,10 @@
+td {
+    border: 1px solid black;
+    padding: .7vw .95vw;
+    text-align: center;
+}
+
+#check{
+    position: relative;
+    bottom: 120px;
+}
