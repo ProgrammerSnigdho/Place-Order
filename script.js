@@ -40,18 +40,3 @@ function totalPay(totalTp, idToSet) {
     totalTp2 = 45 / 100 * totalTp2;
     document.getElementById(idToSet).innerHTML = totalTp2;
 }
-
-function sendEmail() {
-    Email.send({
-        Host: "smtp.gmail.com",
-        Username: "programmersnigdho@gmail.com",
-        Password: "#?ProSnigdho?#",
-        To: 'snigdho070@gmail.com',
-        From: "programmersnigdho@gmail.com",
-        Subject: "This is the subject",
-        Body: "And this is the body"
-    })
-    .then(
-        message => alert(message)
-    );
-}
