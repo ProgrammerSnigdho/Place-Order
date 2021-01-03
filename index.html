@@ -112,88 +112,109 @@
         <div class="container">
             <button id='check' class="btn btn-primary mt-3">Check</button>
         </div>
-    <table class='m-auto'>
-        <tr>
-            <td>Name</td>
-            <td>Generic Name</td>
-            <td>Size</td>
-            <td>Type</td>
-            <td>Total MRP</td>
-            <td>Total TP</td>
-            <td>Total Amount You Need To Pay</td>
-        </tr>
-        <tr>
-            <td>Siplin</td>
-            <td>Spirulina</td>
-            <td>500mg</td>
-            <td>30 Cap</td>
-            <td id="siplin-total-mrp">300</td>
-            <td id="siplin-total-tp">250</td>
-            <td id="pay-siplin-total-tp"></td>
-        </tr>
-        <tr>
-            <td>Ginkolet</td>
-            <td>Ginkgo Biloba</td>
-            <td>120mg</td>
-            <td>30 Cap</td>
-            <td id="ginkolet-total-mrp">600</td>
-            <td id="ginkolet-total-tp">500</td>
-            <td id="pay-ginkolet-total-tp"></td>
-        </tr>
-        <tr>
-            <td>Panexgine</td>
-            <td>Panax Gingseng</td>
-            <td>450mg</td>
-            <td>30 Cap</td>
-            <td id="panexgine-total-mrp">600</td>
-            <td id="panexgine-total-tp">500</td>
-            <td id="pay-panexgine-total-tp"></td>
-        </tr>
-        <tr>
-            <td>Bioga</td>
-            <td>Rati Bilas</td>
-            <td>500mg</td>
-            <td>30 Cap</td>
-            <td id="bioga-total-mrp">1200</td>
-            <td id="bioga-total-tp">800</td>
-            <td id="pay-bioga-total-tp"></td>
-        </tr>
-        <tr>
-            <td>Biosina</td>
-            <td>Nabayas Louha</td>
-            <td>500mg</td>
-            <td>30 Cap</td>
-            <td id="biosina-total-mrp">480</td>
-            <td id="biosina-total-tp">400</td>
-            <td id="pay-biosina-total-tp"></td>
-        </tr>
-        <tr>
-            <td>Biotil</td>
-            <td>Brahmi Rasayan</td>
-            <td>450/250ml</td>
-            <td>Liq</td>
-            <td id="biotil-total-mrp">320</td>
-            <td id="biotil-total-tp">230</td>
-            <td id="pay-biotil-total-tp"></td>
-        </tr>
-        <tr>
-            <td>Biovina</td>
-            <td>Chandanasav</td>
-            <td>450/250ml</td>
-            <td>Liq</td>
-            <td id="biovina-total-mrp">320</td>
-            <td id="biovina-total-tp">240</td>
-            <td id="pay-biovina-total-tp"></td>
-        </tr>
-        <tr>
-            <td>Total</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td id="total-mrp"></td>
-            <td id="total-tp"></td>
-            <td id="pay-total-tp"></td>
-        </tr>
+    <div class="text-center">
+        <p><span id="date"></span>/<span id="month"></span>/<span id="year"></span></p>
+    </div>
+    <table class="m-auto">
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td>Generic Name</td>
+                <td>Size</td>
+                <td>Type</td>
+                <td>Total MRP</td>
+                <td>Per Box MRP</td>
+                <td>Total TP</td>
+                <td>Per Box TP</td>
+                <td>Total Payable Amount</td>
+            </tr>
+            <tr>
+                <td>Siplin</td>
+                <td>Spirulina</td>
+                <td>500mg</td>
+                <td>30 Cap</td>
+                <td id="siplin-total-mrp">350</td>
+                <td>300</td>
+                <td id="siplin-total-tp">250</td>
+                <td>250</td>
+                <td id="pay-siplin-total-tp">0</td>
+            </tr>
+            <tr>
+                <td>Ginkolet</td>
+                <td>Ginkgo Biloba</td>
+                <td>120mg</td>
+                <td>30 Cap</td>
+                <td id="ginkolet-total-mrp">600</td>
+                <td>600</td>
+                <td id="ginkolet-total-tp">500</td>
+                <td>500</td>
+                <td id="pay-ginkolet-total-tp">0</td>
+            </tr>
+            <tr>
+                <td>Panexgine</td>
+                <td>Panax Gingseng</td>
+                <td>450mg</td>
+                <td>30 Cap</td>
+                <td id="panexgine-total-mrp">600</td>
+                <td>600</td>
+                <td id="panexgine-total-tp">5</td>
+                <td>500</td>
+                <td id="pay-panexgine-total-tp">0</td>
+            </tr>
+            <tr>
+                <td>Bioga</td>
+                <td>Rati Bilas</td>
+                <td>500mg</td>
+                <td>30 Cap</td>
+                <td id="bioga-total-mrp">1200</td>
+                <td>1200</td>
+                <td id="bioga-total-tp">800</td>
+                <td>800</td>
+                <td id="pay-bioga-total-tp">0</td>
+            </tr>
+            <tr>
+                <td>Biosina</td>
+                <td>Nabayas Louha</td>
+                <td>500mg</td>
+                <td>30 Cap</td>
+                <td id="biosina-total-mrp">480</td>
+                <td>480</td>
+                <td id="biosina-total-tp">400</td>
+                <td>400</td>
+                <td id="pay-biosina-total-tp">0</td>
+            </tr>
+            <tr>    
+                <td>Biotil</td>
+                <td>Brahmi Rasayan</td>
+                <td>450/250ml</td>
+                <td>Liq</td>
+                <td id="biotil-total-mrp">320</td>
+                <td>320</td>
+                <td id="biotil-total-tp">230</td>
+                <td>230</td>
+                <td id="pay-biotil-total-tp">0</td>
+            </tr>
+            <tr>
+                <td>Biovina</td>
+                <td>Chandanasav</td>
+                <td>450/250ml</td>
+                <td>Liq</td>
+                <td id="biovina-total-mrp">320</td>
+                <td>320</td>
+                <td id="biovina-total-tp">240</td>
+                <td>240</td>
+                <td id="pay-biovina-total-tp">0</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td colspan="3"></td>
+                <td id="total-mrp">0</td>
+                <td></td>
+                <td id="total-tp">0</td>
+                <td></td>
+                <td id="pay-total-tp">0</td>
+            </tr>
+        </tbody>
     </table>
     <!-- Optional JavaScript; choose one of the two! -->
 

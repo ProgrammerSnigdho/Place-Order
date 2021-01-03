@@ -42,3 +42,13 @@ function totalPay(totalTp, idToSet) {
     totalTp2 = 45 / 100 * totalTp2;
     document.getElementById(idToSet).innerHTML = totalTp2;
 }
+
+const a = new Date;
+date = a.getDate()
+month = a.getMonth()
+month += 1;
+year = a.getFullYear()
+
+document.getElementById('date').innerHTML = date
+document.getElementById('month').innerHTML = month
+document.getElementById('year').innerHTML = year
